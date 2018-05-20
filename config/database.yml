@@ -13,20 +13,20 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: bb5011d0660cce
-  password: 82adb475
-  host: us-cdbr-iron-east-04.cleardb.net
+  username: root
+  password: 
+  host: localhost
 
 development:
   <<: *default
-  database: heroku_cc5cb29b3488f22
+  database: islam
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: heroku_cc5cb29b3488f22
+  database: islam
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: heroku_cc5cb29b3488f22
-  username: bb5011d0660cce
-  password: 82adb475
+  database: islam
+  username: root
+  password: 
